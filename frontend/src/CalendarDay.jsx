@@ -17,6 +17,7 @@ export default function CalendarDay({ cell, isToday, primaryCalendar, ramadanDat
   const hijri = toHijri(new Date(gregYear, gregMonth, gregDay));
   const currentHijri = toHijri(new Date());
 
+  // We should be able to change calendar view.
   const primaryNumber   = primaryCalendar === "gregorian" ? gregDay : hijri.day;
   const secondaryNumber = primaryCalendar === "gregorian"
     ? `${hijri.day} ${hijri.monthName}`
