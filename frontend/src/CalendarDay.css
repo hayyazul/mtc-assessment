@@ -1,0 +1,45 @@
+/* CalendarDay.css */
+
+.day-empty {
+  background-color: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  min-height: 80px;
+  min-width: fit-content;
+}
+
+.day-cell {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 80px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.day-cell.today {
+  border: 2px solid #4a90d9;
+  background-color: #eef5fd;
+}
+
+/* Primary date — big and bold */
+.day-number {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Secondary date — small and muted */
+.day-secondary {
+  font-size: 10px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.day-content {
+  flex: 1;
+  font-size: 12px;
+  color: #666;
+}
